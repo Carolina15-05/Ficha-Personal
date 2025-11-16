@@ -1,0 +1,140 @@
+/* Tipografías */
+body {
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  border-bottom: 2px solid #b8860b;
+}
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  color: #b8860b;
+}
+.subtitulo {
+  font-size: 1.2em;
+  color: #a61d2d;
+}
+
+/* Ficha personal */
+.ficha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 600px;
+  background-color: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+}
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #b8860b;
+  margin-bottom: 20px;
+}
+.datos p {
+  margin: 8px 0;
+}
+
+/* Proyectos */
+.proyectos {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.proyectos h2 {
+  color: #b8860b;
+  margin-bottom: 20px;
+}
+.botones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.btn {
+  background-color: #a61d2d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #b8860b;
+  color: #0d0d0d;
+}
+
+/* Botón modo */
+.modo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#modoBtn {
+  background: none;
+  border: 2px solid #b8860b;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #b8860b;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#modoBtn:hover {
+  background-color: #b8860b;
+  color: #0d0d0d;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #999;
+  padding: 20px;
+  border-top: 1px solid #b8860b;
+}
+
+/* ----- Modo Claro ----- */
+.light {
+  background-color: #faf6ed;
+  color: #1a1a1a;
+}
+.light header {
+  border-bottom-color: #a61d2d;
+}
+.light header h1 {
+  color: #a61d2d;
+}
+.light .subtitulo {
+  color: #b8860b;
+}
+.light .ficha {
+  background-color: rgba(0,0,0,0.05);
+}
+.light .btn {
+  background-color: #b8860b;
+  color: #1a1a1a;
+}
+.light .btn:hover {
+  background-color: #a61d2d;
+  color: #fff;
+}
+.light #modoBtn {
+  border-color: #a61d2d;
+  color: #a61d2d;
+}
+.light #modoBtn:hover {
+  background-color: #a61d2d;
+  color: #fff;
+}

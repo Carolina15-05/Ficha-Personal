@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha Personal - Carolina Sargiotto</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Carolina Sargiotto</h1>
+    <p class="subtitulo">Licenciatura en Criminología y Ciberdelitos</p>
+  </header>
+
+  <section class="ficha">
+    <img src="img/Yo.jpg" alt="Foto personal" class="foto">
+
+    <div class="datos">
+      <p><strong>Legajo:</strong> 1195027</p>
+      <p><strong>Número de clase:</strong> 536117</p>
+      <p><strong>Carrera:</strong> Licenciatura en Criminología y Ciberdelitos</p>
+    </div>
+  </section>
+
+  <section class="proyectos">
+    <h2>Proyectos personales</h2>
+    <div class="botones">
+      <a href="https://carolina15-05.github.io/FanPage/" target="_blank" class="btn">Fan Page</a>
+      <a href="https://carolina15-05.github.io/Local-Individual/" target="_blank" class="btn">Local Comercial</a>
+      <a href="https://mateogia.github.io/GaleriaComercial-DyDW/index.html " target="_blank" class="btn">Sitio grupal del Centro Comercial</a>
+    </div>
+  </section>
+
+  <div class="modo">
+    <button id="modoBtn">🌙 Modo Oscuro</button>
+  </div>
+
+  <footer>
+    © 2025 Carolina Sargiotto - Todos los derechos reservados.
+  </footer>
+
+  <!-- Script integrado -->
+  <script>
+    const btn = document.getElementById('modoBtn');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+      if (document.body.classList.contains('light')) {
+        btn.textContent = '☀️ Modo Claro';
+      } else {
+        btn.textContent = '🌙 Modo Oscuro';
+      }
+    });
+  </script>
+</body>
+</html>
